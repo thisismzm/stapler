@@ -12,8 +12,9 @@ interface Interpolator
      * @param string              $string
      * @param AttachmentInterface $attachment
      * @param string              $styleName
+     * @param bool                $shouldUrlencode
      *
      * @return string
      */
-    public function interpolate($string, AttachmentInterface $attachment, $styleName = '');
+    public function interpolate($string, AttachmentInterface $attachment, $styleName = '', $shouldUrlencode = false);
 }
