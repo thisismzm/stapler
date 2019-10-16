@@ -24,7 +24,7 @@ class Interpolator implements InterpolatorInterface
      *
      * @return string
      */
-    public function interpolate($string, Attachment $attachment, $styleName = '', $shouldUrlencode = false)
+    public function interpolate($string, AttachmentInterface $attachment, $styleName = '', $shouldUrlencode = false)
     {
         foreach ($this->interpolations() as $key => $value)
         {
